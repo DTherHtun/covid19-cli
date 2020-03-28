@@ -1,4 +1,5 @@
 # covid19-cli
+[![Go](https://github.com/DTherHtun/covid19-cli/workflows/Go/badge.svg)](https://github.com/DTherHtun/covid19-cli/actions?query=workflow%3AGo)
 
 command line tools for Covid-19 Cases status.
 
