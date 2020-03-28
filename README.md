@@ -21,3 +21,13 @@ Use "covid19-cli [command] --help" for more information about a command.
 ```
 
 ![](.gif/covid19-cli.gif)
+
+
+## Download
+
+for linux - 
+```
+$ wget https://github.com/DTherHtun/covid19-cli/releases/download/v1.0/covid19-cli
+$ chmod +x covid19-cli
+$ ./covid19-cli
+```
