@@ -1,4 +1,4 @@
-# covid19-clia
+# covid19-cli
 
 command line tools for Covid-19 Cases status.
 
