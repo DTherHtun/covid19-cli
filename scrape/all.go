@@ -61,8 +61,29 @@ func TableScrape() {
 	table := tablewriter.NewWriter(os.Stdout)
 	table.SetHeader(headings)
 	table.SetBorder(false)
-	table.SetHeaderColor(tablewriter.Colors{tablewriter.Bold, tablewriter.BgHiCyanColor, tablewriter.FgBlackColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.BgYellowColor, tablewriter.FgBlackColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.BgCyanColor, tablewriter.FgBlackColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.BgRedColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.BgCyanColor, tablewriter.FgBlackColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.BgGreenColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.BgWhiteColor, tablewriter.FgBlackColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.BgMagentaColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.BgWhiteColor, tablewriter.FgBlackColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.BgWhiteColor, tablewriter.FgBlackColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.BgHiBlueColor, tablewriter.FgBlackColor})
-	table.SetColumnColor(tablewriter.Colors{tablewriter.Bold, tablewriter.FgHiCyanColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.FgYellowColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.FgCyanColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.FgRedColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.FgCyanColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.FgGreenColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.FgWhiteColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.FgMagentaColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.FgWhiteColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.FgWhiteColor}, tablewriter.Colors{tablewriter.Bold, tablewriter.FgHiBlueColor})
+	table.SetHeaderColor(tablewriter.Colors{tablewriter.Bold, tablewriter.BgHiCyanColor, tablewriter.FgBlackColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.BgYellowColor, tablewriter.FgBlackColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.BgCyanColor, tablewriter.FgBlackColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.BgRedColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.BgCyanColor, tablewriter.FgBlackColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.BgGreenColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.BgWhiteColor, tablewriter.FgBlackColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.BgMagentaColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.BgWhiteColor, tablewriter.FgBlackColor},
+		//tablewriter.Colors{tablewriter.Bold, tablewriter.BgWhiteColor, tablewriter.FgBlackColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.BgHiBlueColor, tablewriter.FgBlackColor})
+
+	table.SetColumnColor(tablewriter.Colors{tablewriter.Bold, tablewriter.FgHiCyanColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.FgYellowColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.FgCyanColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.FgRedColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.FgCyanColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.FgGreenColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.FgWhiteColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.FgMagentaColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.FgWhiteColor},
+		//tablewriter.Colors{tablewriter.Bold, tablewriter.FgWhiteColor},
+		tablewriter.Colors{tablewriter.Bold, tablewriter.FgHiBlueColor})
 	for _, v := range rows {
 		table.Append(v)
 	}
